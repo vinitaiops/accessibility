@@ -69,6 +69,137 @@
                       </code>
                     </div>
                   </div>
+                  <div class="col-md-12">
+                    <div class="h-100 p-5 bg-body-tertiary rounded-3">
+                      <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                      <span class=" text-bg-success">Good Example: Implicit Labels</span></h2>
+                      <p>An implicit association is created by putting the form control inside the label element.</p>
+                      <form>
+                        <p>
+                          <label>First Name: <input type="text" name="fname1"></label>
+                        </p>
+                        <p>
+                          <label>Last Name: <input type="text" name="lname1"></label>
+                        </p>
+                      </form>
+                      <code>
+                        <pre>
+                          &#60;form&#62;
+                          &#60;p&#62;
+                               &#60;label&#62;First Name: &#60;input type="text" name="fname1"&#62;&#60;/label&#62;
+                           &#60;/p&#62;
+                           &#60;p&#62;
+                              &#60;label&#62;Last Name: &#60;input type="text" name="lname1"&#62;&#60;/label&#62;
+                           &#60;/p&#62;
+                     &#60;/form&#62;
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
+                  <div class="col-md-12" class="border-success">
+                    <div class="h-100 p-5 bg-body-tertiary rounded-3">
+                      <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                      <span class=" text-bg-success">Good Example: aria-labelledby for a text input</span></h2>
+                      <p>This text field provides a screen-reader accessible label by using the aria-labelledby attribute on the input to reference the id of the <span> around the visible text "Nickname".
+                        If you try clicking on the aria-labelledby text, you will notice that it does not put the focus in the text field as it does in the explicit label example. This method should only be used when <label> does not work</p>
+                      <form>
+                        <p><span id="Nickname">Nickname:</span> <input type="text" aria-labelledby="Nickname"></p>
+                      </form>
+                      <code>
+                        <pre>
+                          &#60;form&#62;
+                          &#60;p&#62;&#60;span id="Nickname"&#62;Nickname:&#60;/span&#62; &#60;input type="text" aria-labelledby="Nickname"&#62;&#60;/p&#62;
+   &#60;/form&#62;
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="h-100 p-5 bg-body-tertiary rounded-3">
+                      <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                      <span class=" text-bg-success">Good Example: aria-label for a text input</span></h2>
+                      <p>This example shows a search input field that uses aria-label to provide a label for screen readers, since there is no visible label. The search field is visibly labelled by the search button next to it. This is one of the few circumstances in which it is permissible to not have a visible label for a form field.</p>
+                      <form>
+                        <p>
+                          <label>First Name: <input type="text" name="fname1"></label>
+                        </p>
+                        <p>
+                          <label>Last Name: <input type="text" name="lname1"></label>
+                        </p>
+                      </form>
+                      <code>
+                        <pre>
+                          &#60;form&#62;
+                            &#60;p&#62;&#60;input type="text" aria-label="search"&#62; &#60;input type="submit" value="Search"&#62;&#60;/p&#62;
+                         &#60;/form&#62;
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="h-100 p-5 bg-body-tertiary rounded-3">
+                      <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                      <span class=" text-bg-success">Good Example: title attribute for a text input</span></h2>
+                      <p>In this example, the title attribute is used as the screen-reader accessible label for the text field. The title attribute is invisible to sighted users, though it does cause a tooltip to appear when users hover the mouse over the text input, which can be considered an accessibility benefit. Note that the tooltip does not appear when the user focuses on the input with the keyboard, so the usefulness of the tooltip of the title attribute is limited only to mouse users.</p>
+                      <form>
+                        <p><input type="text" title="search"> <input type="submit" value="Search"></p>
+                      </form>
+                      <code>
+                        <pre>
+                          &#60;form&#62;
+                              &#60;p&#62;&#60;input type="text" title="search"&#62; &#60;input type="submit" value="Search"&#62;&#60;/p&#62;
+                          &#60;/form&#62;
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="h-100 p-5 bg-body-tertiary rounded-3">
+                      <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg>
+                      <span class=" text-bg-warning">Bad Example: Image with no alt text used as a label</span></h2>
+                      <p>In this bad example, it appears visually as if this input has a text label, because there is text in the graphic that says "search," and there is even a proper <label> element around the image, but there is no programmatically determinable text in the label for this text input because the image in the <label> element does not have alt text.</p>
+                      <form>
+                        <p>
+                          <label for="fa-search-no-alt">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                          </label>
+                          <input type="text" id="fa-search-no-alt">
+                        </p>
+                      </form>
+                      <code>
+                        <pre>
+                          &#60;form&#62;
+                          &#60;p&#62;
+                            &#60;label for="fa-search-no-alt"&#62;
+                              &#60;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"&#62;
+                                &#60;path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/&#62;
+                              &#60;/svg&#62;
+                            &#60;/label&#62;
+                            &#60;input type="text" id="fa-search-no-alt"&#62;
+                          &#60;/p&#62;
+                        &#60;/form&#62;
+                        &#60;code&#62;
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
                 </div>
             
                 <footer class="pt-3 mt-4 text-body-secondary border-top">
